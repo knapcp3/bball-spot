@@ -1,0 +1,12 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Location {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  getAllLocations: [Location!]!
+}
