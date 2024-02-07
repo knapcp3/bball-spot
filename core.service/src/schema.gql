@@ -8,5 +8,5 @@ type Location {
 }
 
 type Query {
-  getAllLocations: [Location!]!
+  locations: [Location!]!
 }

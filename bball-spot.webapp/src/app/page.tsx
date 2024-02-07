@@ -1,3 +1,9 @@
+import LocationsList from "@/Locations/Locations";
+
 export default function Home() {
-  return <div>SIALALALAA</div>;
+  return (
+    <div>
+      <LocationsList />
+    </div>
+  );
 }

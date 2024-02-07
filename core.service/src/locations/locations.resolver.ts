@@ -6,7 +6,7 @@ import { Location } from './models/location.model';
 export class LocationsResolver {
   constructor(private locationsService: LocationsService) {}
 
-  @Query(() => [Location], { name: 'getAllLocations' })
+  @Query(() => [Location], { name: 'locations' })
   async getAllLocations(): Promise<Location[]> {
     return this.locationsService.getAll();
   }
