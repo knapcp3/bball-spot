@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  bball-spot.webapp:
+    image: bball-spot.webapp.image.dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: bball-spot.webapp.container.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules #TODO
+    environment:
+      - NODE_ENV=development
+    command: npm run start:dev

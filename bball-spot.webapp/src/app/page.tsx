@@ -1,4 +1,4 @@
-import LocationsList from "@/Locations/Locations";
+import { LocationsList } from "@/modules/locations/Locations";
 
 export default function Home() {
   return (

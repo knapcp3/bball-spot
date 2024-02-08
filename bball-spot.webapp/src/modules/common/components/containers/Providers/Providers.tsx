@@ -2,7 +2,7 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { FC } from "react";
 
-let client: ApolloClient | null = null;
+let client: ApolloClient<Record<string, unknown> | null> | null = null;
 
 const getApolloClient = () => {
   if (!client) {
